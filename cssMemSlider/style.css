@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.clider-css {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.meme-img {
+  margin: 0 1%;
+}
+.slider-meme {
+  display: flex;
+  width: 400%;
+}
+.slider-meme input {
+  display: none;
+}
