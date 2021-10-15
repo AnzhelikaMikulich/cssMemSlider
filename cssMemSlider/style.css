@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: rgba(96, 175, 169, 0.562);
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Georama", sans-serif;
 }
 img,
 p {
@@ -12,15 +20,17 @@ p {
 
 .clider-css {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 2% auto;
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: rgba(0, 255, 255, 0.562);
 }
 .meme-img {
   width: 25%;
   transition: all 0.6s ease;
+}
+.meme-img img {
+  padding-bottom: 5%;
 }
 .slider-meme {
   display: flex;
@@ -30,20 +40,37 @@ p {
   display: none;
 }
 .navigation {
-  width: 30%;
-  height: 20px;
+  width: 85%;
+  height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -60px auto 0;
 }
 .dots {
-  width: 30px;
-  height: 10px;
-  background-color: rgb(140, 0, 255);
-  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.dots:hover {
+.dots a {
+  background-color: rgb(140, 0, 255);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  padding: 15px;
+  font-size: 0;
+  pointer-events: none;
+}
+.dots:hover a {
+  background-color: rgb(247, 0, 255);
+  transform: scaleY(1.1);
+}
+.dots:active a {
   background-color: rgb(247, 0, 255);
   transform: scale(1.1);
 }
