@@ -11,18 +11,29 @@ body {
   font-weight: 300;
   font-family: "Georama", sans-serif;
 }
-img,
-p {
+.slider-title {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+.meme-img img {
+  max-height: 700px;
+}
+.meme-img p {
+  width: 53%;
+  font-size: 28px;
+  font-weight: bold;
+}
+.meme-img img,
+.meme-img p {
   max-width: 80%;
   display: block;
   margin: 0 auto;
 }
-
 .clider-css {
-  max-width: 1440px;
   margin: 2% auto;
-  width: 100%;
-  height: auto;
+  width: 75%;
+  height: 50%;
   overflow: hidden;
 }
 .meme-img {
@@ -40,15 +51,14 @@ p {
   display: none;
 }
 .navigation {
-  width: 85%;
-  height: 100px;
+  width: 53%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: -60px auto 0;
+  margin: -65px auto 0;
 }
 .dots {
-  width: 100px;
+  width: 60px;
   height: 100px;
   background-color: transparent;
   display: flex;
@@ -59,7 +69,7 @@ p {
   transition: all 0.4s ease-in-out;
 }
 .dots a {
-  background-color: rgb(140, 0, 255);
+  background-color: rgb(151, 84, 206);
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
   padding: 15px;
@@ -67,12 +77,8 @@ p {
   pointer-events: none;
 }
 .dots:hover a {
-  background-color: rgb(247, 0, 255);
+  background-color: rgb(187, 80, 190);
   transform: scaleY(1.1);
-}
-.dots:active a {
-  background-color: rgb(247, 0, 255);
-  transform: scale(1.1);
 }
 #mem-one:checked ~ .slider-transform {
   margin-left: 0%;
@@ -86,3 +92,20 @@ p {
 #mem-for:checked ~ .slider-transform {
   margin-left: -75%;
 }
+@media (max-width: 1920px) and(min-width: 1915px) {
+  .meme-img img {
+    height: 700px;
+  }
+}
+@media (max-width: 425px) {
+  .meme-img p {
+    width: 80%;
+    margin-top: 100px;
+  }
+  .navigation {
+    margin: -400px auto 0;
+  }
+  .dots {
+    height: 500px;
+  }
+} ;
