@@ -91,16 +91,16 @@ body {
 #mem-for:checked ~ .slider-meme > .slider-transform {
   margin-left: -75%;
 }
-#mem-one:checked ~ .navigation > .one > a:visited {
+#mem-one:checked ~ .navigation > .one > a:nth-of-type(1) {
   background-color: rgb(80, 96, 190);
 }
-#mem-two:checked ~ .navigation > .two > a:visited {
+#mem-two:checked ~ .navigation > .two > a:nth-of-type(1) {
   background-color: rgb(80, 96, 190);
 }
-#mem-three:checked ~ .navigation > .three > a:visited {
+#mem-three:checked ~ .navigation > .three > a:nth-of-type(1) {
   background-color: rgb(80, 96, 190);
 }
-#mem-for:checked ~ .navigation > .for > a:visited {
+#mem-for:checked ~ .navigation > .for > a:nth-of-type(1) {
   background-color: rgb(80, 96, 190);
 }
 @media (max-width: 1920px) and(min-width: 1915px) {
