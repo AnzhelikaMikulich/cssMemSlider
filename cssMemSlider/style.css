@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(96, 175, 169, 0.562);
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Georama", sans-serif;
+}
+.slider-title {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+.clider-css {
+  margin: 2% auto;
+  width: 75%;
+  height: 50%;
+  overflow: hidden;
+}
+.clider-css input {
+  display: none;
+}
+.slider-meme {
+  display: flex;
+  width: 400%;
+}
+.meme-img {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.meme-img img {
+  padding-bottom: 5%;
+  max-height: 44rem;
+}
+.meme-img p {
+  width: 53%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+.meme-img img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -4.5rem auto 0;
+}
+.dots {
+  width: 5rem;
+  height: 7rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.dots a {
+  background-color: rgb(151, 84, 206);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem;
+  font-size: 0;
+  pointer-events: none;
+}
+.dots:hover a {
+  background-color: rgb(34, 199, 199);
+  transform: scaleY(1.1);
+}
+.dots:active a {
+  transition: 0.05s;
+  background: #f1faee;
+}
+#mem-one:checked ~ .slider-meme > .slider-transform {
+  margin-left: 0%;
+}
+#mem-two:checked ~ .slider-meme > .slider-transform {
+  margin-left: -25%;
+}
+#mem-three:checked ~ .slider-meme > .slider-transform {
+  margin-left: -50%;
+}
+#mem-for:checked ~ .slider-meme > .slider-transform {
+  margin-left: -75%;
+}
+#mem-one:checked ~ .navigation > .one > a:nth-of-type(1) {
+  background-color: rgb(80, 96, 190);
+}
+#mem-two:checked ~ .navigation > .two > a:nth-of-type(1) {
+  background-color: rgb(80, 96, 190);
+}
+#mem-three:checked ~ .navigation > .three > a:nth-of-type(1) {
+  background-color: rgb(80, 96, 190);
+}
+#mem-for:checked ~ .navigation > .for > a:nth-of-type(1) {
+  background-color: rgb(80, 96, 190);
+}
+@media (max-width: 1920px) and(min-width: 1915px) {
+  .meme-img img {
+    height: 44rem;
+  }
+}
+@media (max-width: 1915px) {
+  .meme-img img {
+    max-height: 22rem;
+    max-width: 30rem;
+  }
+  .meme-img p {
+    text-align: center;
+  }
+  .navigation {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .meme-img img {
+    max-height: 15rem;
+    max-width: 25rem;
+  }
+  .slider-title {
+    font-size: 2rem;
+  }
+  .meme-img p {
+    width: 80%;
+    margin-top: 6rem;
+    text-align: left;
+  }
+  .navigation {
+    margin: -25rem auto 0;
+  }
+  .dots {
+    height: 35rem;
+  }
+} ;
